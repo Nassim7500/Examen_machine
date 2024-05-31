@@ -29,3 +29,6 @@ int[] PrintTab()
     }
     return tab;
 }
+
+Saisie();
+PrintTab();
