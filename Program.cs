@@ -1,7 +1,9 @@
 int[] tab;
 int length;
 string str;
+int rev;
 
+// Fonction qui permet de saisir la taille et les valeurs du tableau
 int[] Saisie()
 {
     Console.WriteLine("Saisir la taille du tableau"); // Demande à l'utilisateur la taille du tableau
@@ -19,6 +21,8 @@ int[] Saisie()
     return tab;
 }
 
+// Fonction qui permet d'afficher le tableau
+
 int[] PrintTab()
 {
     Console.WriteLine("Vous avez saisi:");
@@ -30,5 +34,24 @@ int[] PrintTab()
     return tab;
 }
 
+// Fonction qui permet d'afficher le tableau inversé
+
+int[] PrintReverseTab()
+{
+
+    Console.WriteLine("Le tableau inversé est:");
+
+    for (int i = length - 1; i >= 0; i--) // Boucle qui permet de parcourir le tableau de droite à gauche (à l'envers)
+    {
+        rev = tab[i]; // Stockage de la valeur du tableau à l'indice i dans la variable rev
+        Console.WriteLine(rev);
+    }
+
+    return tab;
+}
+
+// Appel des fonctions
+
 Saisie();
 PrintTab();
+PrintReverseTab();
