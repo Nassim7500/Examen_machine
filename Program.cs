@@ -18,3 +18,14 @@ int[] Saisie()
     }
     return tab;
 }
+
+int[] PrintTab()
+{
+    Console.WriteLine("Vous avez saisi:");
+
+    foreach (int i in tab) // Boucle qui affiche la valeur de la case du tableau à l'indice i, ce qui affiche au final l'ensemble du tableau
+    {
+        Console.WriteLine(i);
+    }
+    return tab;
+}
